@@ -1,0 +1,9 @@
+/* .container{
+    border: 1px solid red;
+    overflow: auto;
+} */
+/* overflow:auto covers contents that left the container */
+
+.pet{
+    background: aqua;
+}

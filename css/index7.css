@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: blueviolet;
+    min-height: 100vh;
+}
+
+section{
+    box-sizing: border-box;
+}
+
+.login{
+    position: relative;
+    padding: 50px;
+    background: #ffffff;
+    width: 500px;
+}
+
+.login h2{
+    position: relative;
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: blueviolet;
+    text-align: center;
+    font-weight: bold;
+}
+
+.login h2::after{
+    content: "";
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background: blueviolet;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.login p a{
+    text-decoration: none;
+}
+
+.inputBox{
+    margin-bottom: 20px;
+    position: relative;
+    /* the maxheight is for javascript maxheight */
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+
+.inputBox input{
+    position: relative;
+    width: 100%;
+    padding: 10px 15px;
+    outline: none;
+    border: 2px solid #555;
+    color: blue;
+    font-size: 1em;
+}
+
+.inputBox span{
+    position: absolute;
+    right: 17px;
+    bottom: 12px;
+    color: black;
+}
+
+#btn{
+    border: none;
+    background: blueviolet;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btnfield{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btnfield button{
+    background: blueviolet;
+    flex-basis: 48%;
+    color: white;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.btnfield button.disable{
+    background: wheat;
+    color: #555;
+}
+
+#passworderror{
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    top: 8px;
+    right: 10px;
+    background: #00000020;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#passworderror::before{
+    content: "\f070";
+    font-family: fontAwesome;
+}
+
+#passworderror.hide::before{
+    content: "\f06e";
+}
+
+.vali{
+    background: red;
+    padding: 10px;
+    margin-top: 30px;
+    border-radius: 8px;
+    box-shadow: 0 15px 25px black;
+}
+
+.vali ul{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.vali ul li{
+    position: relative;
+    list-style: none;
+    color: white;
+    font-size: 0.85em;
+    transition: 0.5s;
+}
+
+.vali ul li::before{
+    content: "\f192";
+    width: 20px;
+    height: 10px;
+    display: inline-flex;
+    font-family: fontAwesome;
+}
+
+.vali ul li.valid{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.vali ul li.valid::before{
+    content: "\f00c";
+    color: green;
+}
+

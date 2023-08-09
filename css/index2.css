@@ -1,0 +1,95 @@
+.card img{
+    height: 228px;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.dropdown:hover > .dropdown-menu, .dropend:hover > .dropdown-menu{
+    display: block;
+}
+
+.dropend:hover > .dropdown-menu{
+    position: absolute;
+    top: 0;
+    right: 100%;
+}
+
+
+.navbar-text{
+    font-size: xx-large;
+    color: #5777BA;
+    text-decoration: none;
+    font-weight: lighter;
+}
+
+.nav-link{
+    color: #47536E;
+    font-weight: lighter;
+}
+
+ .active{
+    color: #A0B2D8;
+    border-bottom: 2px solid #A0B2D8;
+}
+
+.dropdown-menu  .dropdown-item:hover{
+    color: #5777BA;
+}
+
+.first-section{
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+/* #hero::before{
+    content: "";
+    position: absolute;
+    right: -100%;
+    top: 20%;
+    width: 250%;
+    height: 200%;
+    z-index: -1;
+    background-color: #e8ecf5;
+    transform: skewY(135deg);
+} */
+
+.bad{
+    background: #5777BA;
+    font-size: medium;
+    border: none;
+    font-weight: lighter;
+}
+
+.bad:hover{
+    background: #5777BA90;
+}
+
+.section-content{
+    margin-bottom: 3rem;
+}
+
+.section-content h1{
+    color: #5777BA;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.section-content p{
+    color: #7E899F;
+    margin-bottom: 50px;
+}
+
+.section-content button{
+    padding: 15px;
+    color: white;
+    background: #47536E;
+    border-radius: 5px;
+    font-size: medium;
+    font-weight: lighter;
+}
+
+.section-content button img{
+    width: 20px;
+}
